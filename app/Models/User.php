@@ -46,6 +46,9 @@ class User extends Authenticatable
     {
         // لو انا مخزن التوكن في جدول اليوزر مباشرة
         //return $this->fcm_token;
+
+        //لاني مخزنة التوكنز بجدول لحال
+        //رجعت اراي بقيم التوكن
         return $this->deviceTokens()->pluck('token')->toArray();
     }
     
