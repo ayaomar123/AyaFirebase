@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class AyaMsg extends Controller
 {
     public function index(){
-       $d =  User::query()->find(1)->notify(new MsgNotification(new Order()));
+       $d =  User::query()->find(2)->notify(new MsgNotification(new Order()));
        return $d;
     }
 }
