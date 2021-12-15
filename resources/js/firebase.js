@@ -25,7 +25,7 @@ getToken(messaging, { vapidKey: 'BF9lSqvpuvL9QgW8i8mY_p8K_-PVVDnxvCRJANwb0ccD6ms
     
     $.post('/api/device-tokens', {
         token: currentToken,
-        device: 'chrome',
+        //device: 'chrome',
         _token: $('[name="csrf-token"]').attr('content')
     });
 
